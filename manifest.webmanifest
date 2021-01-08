@@ -2,7 +2,7 @@
   "name": "superpwa synva",
   "short_name": "superpwa",
   "start_url": "./",
-  "scope": "/",
+  "scope": "/synvapwa/",
   "display": "standalone",
   "icons": [ 
    {
