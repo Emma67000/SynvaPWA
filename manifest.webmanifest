@@ -1,6 +1,7 @@
 {
   "name": "superpwa synva",
   "short_name": "superpwa",
+  "theme_color": "#4285f4",
   "start_url": "./",
   "scope": "/synvapwa/",
   "display": "standalone",
