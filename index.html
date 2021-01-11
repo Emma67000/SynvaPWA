@@ -5,7 +5,9 @@
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Elegant Bootstrap 4  message chat box template - Bootsnipp.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#4b5480">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
     <style type="text/css">
         	body,html{
 			height: 100%;
@@ -441,6 +443,13 @@ $('#action_menu_btn').click(function(){
 	$('.action_menu').toggle();
 });
 	});
+</script>
+<script src="js/sw.js"></script>
+<script> if('serviceWorker' in navigator){
+
+navigator.serviceWorker.register('js/sw.js')
+}
+
 </script>
 </body>
 </html>
