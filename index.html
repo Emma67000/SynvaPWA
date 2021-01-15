@@ -451,5 +451,21 @@ navigator.serviceWorker.register('sw.js')
 }
 
 </script>
+<script>
+        if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('sw.js');
+        }
+        if (window.caches){
+            caches.open('lpdwca-PWA').then(
+                cache=>{
+                    cache.addAll([
+                        'index.php',
+                        'js/global.js',
+                        'vendor/jquery/jquery.min.js',
+                        'sw.js'
+                 ]);
+         })
+        }
+</script>
 </body>
 </html>
