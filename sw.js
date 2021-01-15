@@ -4,9 +4,9 @@ self.addEventListener('install', listener: evt=>{
 self.addEventListener('activate', listener: evt=>{
 	console.log(evt);
 });
-self.addEventListener('fetch', listener: evt=>{
-	if (!navigator.onLine) {
-		evt.respondWith(newresponse('Pas de connexion'));
-	}
-	console.log(evt.request.url);
-});
+self.addEventListener('fetch', evt=>{
+    if (!navigator.onLine){
+        evt.respondWith( new Response('pas de connexion internet'))
+    }
+    console.log(evt.request.url);
+})
